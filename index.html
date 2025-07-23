@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swift Earnings</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0e0e0e;
+      color: #fff;
+    }
+    header {
+      background: linear-gradient(to right, #000, #4b0000);
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      color: gold;
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      background: #1a1a1a;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    nav a {
+      color: gold;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+    }
+    .btn {
+      padding: 1rem 2rem;
+      background: red;
+      border: none;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .top-earners {
+      background: #111;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+    .top-earners h2 {
+      color: gold;
+    }
+    .earner {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #333;
+    }
+    .fund-section {
+      background: #1a1a1a;
+      border-radius: 10px;
+      padding: 1rem;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: green;
+      color: white;
+      padding: 0.8rem 1.2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 10px #000;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #888;
+      background: #000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Swift Earnings</h1>
+    <p>Turn ₦6,000 into Daily ₦1,000 – Your Earnings Start Now!</p>
+    <button class="btn" onclick="document.getElementById('signup').scrollIntoView()">Sign Up</button>
+  </header>
+
+  <nav>
+    <a href="#signup">Sign Up</a>
+    <a href="#top-earners">Top Earners</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#fund">Fund Account</a>
+  </nav>
+
+  <section id="signup">
+    <h2>Create Account</h2>
+    <form>
+      <label>Email:</label><br />
+      <input type="email" placeholder="Enter email" required /><br /><br />
+      <label>Password:</label><br />
+      <input type="password" placeholder="Create password" required /><br /><br />
+      <button type="submit" class="btn">Sign Up</button>
+    </form>
+  </section>
+
+  <section id="top-earners" class="top-earners">
+    <h2>Top Earners</h2>
+    <div class="earner">Chika M. earned ₦7,000 this week</div>
+    <div class="earner">Daniel O. withdrew ₦3,000 today</div>
+    <div class="earner">Mercy K. just joined and earned ₦1,000</div>
+    <div class="earner">Favour A. earned ₦5,000 in 3 days</div>
+    <div class="earner">Blessing J. just signed up</div>
+  </section>
+
+  <section id="how-it-works">
+    <h2>How It Works</h2>
+    <p>✅ Register with a one-time fee of ₦6,000</p>
+    <p>✅ Start earning ₦1,000 every day</p>
+    <p>✅ Withdraw your earnings anytime</p>
+    <p>✅ No hidden charges, no stress</p>
+  </section>
+
+  <section id="fund" class="fund-section">
+    <h2>Fund Account</h2>
+    <p>Send your ₦6,000 registration fee to:</p>
+    <p><strong>Bank Name:</strong> Opay</p>
+    <p><strong>Account Name:</strong> Edet Monday Akpan</p>
+    <p><strong>Account Number:</strong> 8058299731</p>
+    <p>After payment, message admin on WhatsApp for activation.</p>
+  </section>
+
+  <a class="whatsapp" href="https://wa.me/2347034391194" target="_blank">💬 Chat Admin</a>
+
+  <footer>
+    <p>&copy; 2025 Swift Earnings. All rights reserved.</p>
+  </footer>
+</body>
+</html>
